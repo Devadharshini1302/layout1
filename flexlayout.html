@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex Layout</title>
+    </head>
+    <style>
+        body{
+            margin:0%;
+            padding:0%
+        }
+        .main_div{
+            background-color: rgb(167, 255, 167);
+            display:flex;
+            padding:5px;
+            height:500px;
+            width:100%;
+            flex-direction: column;
+          justify-items: center;
+            
+
+        }
+        .items{
+            background-color:black;
+            color: white;
+            justify-content: space-around;
+            margin:10px;
+            padding:10px;
+            font-size: 50px;
+            height:fit-content ;
+            
+            
+          
+        }
+    </style>
+    <body>
+        <div class="main_div">
+            <div class="items">One</div>
+            <div class="items">two</div>
+            <div class="items">three</div>
+        </div>
+        <div class="main_div">
+            <div class="items">four</div>
+            <div class="items">five</div>
+            <div class="items">six</div>
+        </div>
+    </body>
+</html>

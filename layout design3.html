@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            WEB LAYOUT3
+        </title>
+        <style>
+            body{
+                margin:0%;
+                padding:0%;
+            }
+            #logodiv{
+                background-color:lightgrey;
+                width:100%;
+                min-height:50px;
+                line-height: 50px;
+                margin-bottom: 10px;
+                padding-inline-start: 2%;
+            }
+            #maindiv{
+                width:100%;
+                margin-bottom: 10px;
+                display: block;
+                background-color:white;
+            }
+            #maindiv p1{
+                width:20%;
+                min-height:100px ;
+                line-height: 100px;
+                text-align: center;
+                padding-left: 1%;
+
+            }
+            #maindiv p2{
+                width:75%;
+                min-height:100px ;
+                line-height: 100px;
+                float:right;
+                background-color:lightgrey;
+                text-align: center;
+                display:block;
+            }
+            .clearfix::after{
+                clear:both;
+                display:block;
+                content:"";
+            }
+            #bodydiv{
+                width:100%;
+                display:block;
+            }
+            #areadiv{
+                width:75%;
+                min-height:350px ;
+                line-height: 350px;
+                float:right;
+                background-color:lightgrey;
+                text-align: center;
+                margin-bottom: 20px;
+                display:block;
+            }
+            #footer{
+                background-color:lightgrey;
+                min-height:50px;
+                line-height: 50px;
+                text-align:center;
+                width:100%;
+               
+            }
+            #wrapper{
+                width:95%;
+                margin:auto;
+            }
+        </style>
+    </head>
+    <body>
+      <div id="wrapper">
+        <div id="logodiv">
+           Logo
+        </div>
+        <div id="maindiv">
+           <p1>Sidebar Area</p1> 
+           <p2>Header/ Banner</p2> 
+        </div>
+        <div id="bodydiv" class="clearfix">
+            <div id="areadiv">
+            Bodyarea
+            </div>
+        </div>
+        <div id="footer">
+            Footer
+        </div>
+    </div>
+    </body>
+</html>

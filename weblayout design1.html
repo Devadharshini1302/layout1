@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            WEB LAYOUT 1
+        </title>
+        <style>
+            *{
+               margin:0%;
+               padding:0%;
+               box-sizing:border-box;
+               font-family: 'Times New Roman', Times, serif;
+             }
+            .header{
+               width:100%;
+               background-color: rgb(165, 164, 164);
+               display: block;
+               min-height:60px;
+               text-align: center;
+               line-height: 60px ;
+               margin-bottom:10px;
+             }
+             #navdiv{
+                width:100%;
+                background-color: lightgrey;
+                min-height:50px;
+                text-align:center;
+                line-height: 50px ;
+                margin-bottom:10px;
+             }
+             #maindiv{
+                width:100%;
+                margin-bottom: 10px; 
+                
+             }
+             #sidediv{
+                background-color: rgb(225, 225, 225); 
+                width:20%;
+                min-height:400px;
+                float:left;
+                text-align: center;
+                line-height:400px;
+             }
+             #bodydiv{
+                background-color: rgb(225, 225, 225); 
+                width:79%;
+                min-height:400px;
+                float:right;
+                line-height:400px;
+                text-align: center;
+             }
+             .clearfix::after{
+                content:"";
+                display:block;
+                clear:both;
+             }
+             #footerdiv{
+                text-align:center;
+                width:100%;
+                min-height:60px;
+                background-color: rgb(165, 164, 164);
+                line-height: 60px;
+            
+             }
+             #wrapperdiv{
+                width:90%;
+                margin:auto;
+             }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="wrapperdiv">
+        <div class="header" style="font-size: 20px;">
+          Header
+        </div>
+        <div id="navdiv">
+            Navigation 
+        </div>
+        <div id="maindiv" class="clearfix">
+           <div id="sidediv">
+            sidebar
+           </div>
+           <div id="bodydiv">
+            Bodyarea
+           </div>
+        </div>
+        <div id="footerdiv">
+            Footer
+        </div>
+    </div>
+    </body>
+</html>

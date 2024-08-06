@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            WEB LAYOUT2
+        </title>
+        <style>
+            body{
+                margin:0%;
+                padding:0%;
+            }
+            .headerdiv{
+                background-color: rgb(180, 178, 178);
+                width:100%;
+                min-height:50px;
+                margin-bottom:10px;
+            }
+            .headerdiv p1{
+                min-height:50px;
+                line-height:50px;
+                margin-left: 10px;
+                font-size: 20px;
+            }
+            .headerdiv p2{
+                min-height:50px;
+                line-height:50px;
+                float:right;
+                margin-right: 20%;
+            }
+            #bannerdiv{
+                min-height:80px;
+                line-height:80px;
+                text-align:center;
+                background-color:rgb(180, 178, 178);
+                margin-bottom:10px;
+            }
+            #areadiv{
+                min-height:60px;
+                line-height:60px;
+                text-align:center;
+                background-color:rgb(180, 178, 178);
+                margin-bottom: 20px;
+            }
+            #maindiv{
+                width:100%;
+                margin-bottom:20px;
+            
+                
+            }
+            #maindiv .box{
+                width:30%;
+                background-color: rgb(180, 178, 178);
+                min-height: 300px;
+                line-height: 300px;
+                text-align: center;
+                float:left;
+              
+               
+            }
+            .clearfix::after{
+                content:"";
+                clear:both;
+                display:block;
+            }
+            #maindiv .box:nth-child(2){
+                margin-left:5%;
+                margin-right:5%;
+            }
+            
+            #footer{
+                 
+                 text-align:center;
+                 min-height: 60px;
+                 line-height:60px;
+                
+                 width:100%;
+                 background-color:rgb(180, 178, 178) ;
+            }
+            #wrapper{
+                width:95%;
+                margin:auto;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+        <div class="headerdiv">
+            <p1 >Logo</p1>
+            <p2>Navigation</p2>
+        </div>
+        <div id="bannerdiv">
+             Header/ Banner
+        </div>
+        <div id="areadiv">
+            Intro to text area
+        </div>
+        <div id="maindiv" class="clearfix">
+            <div class="box">
+               Box 1
+            </div>
+            <div class="box">
+                Box 2
+            </div>
+            <div class="box">
+                Box 3
+            </div>
+        </div>
+        <div id="footer">
+            Footer
+        </div>
+    </div>
+    </body>
+</html>
